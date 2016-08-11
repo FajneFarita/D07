@@ -6,3 +6,21 @@
 # In your final submission:
 #  - Do not print anything extraneous!
 #  - Do not put anything but pass in main()
+
+#from itertools import accumulate
+
+
+def cumulative_sum(lst):
+	new_list = []
+	running_sum = 0
+	for item in lst:
+		running_sum = item + running_sum
+		new_list.append(running_sum)
+
+	return new_list
+
+def main():
+	pass
+#	result = cumulative_sum([1,2,3])
+#	print(result)
+#main()
